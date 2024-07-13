@@ -68,7 +68,7 @@ jobs:
           tags: |
             ${{ github.actor }}/derper:${{ env.TAILSCALE_VERSION }}
             ${{ github.actor }}/derper:latest
-            ghcr.io/${{ github.actor }}/derper:${{ env.TAILSCALE_VERSION }}
-            ghcr.io/${{ github.actor }}/derper:latest
+            ghcr.io/goitoipan/derper:${{ env.TAILSCALE_VERSION }}
+            ghcr.io/goitoipan/derper:latest
           build-args: |
             DERP_VERSION=${{ env.TAILSCALE_VERSION }}
