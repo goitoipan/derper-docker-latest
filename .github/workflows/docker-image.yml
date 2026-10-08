@@ -46,7 +46,7 @@ jobs:
             -H "Authorization: Bearer $GHCR_TOKEN" \
             https://ghcr.io/v2/${{ github.repository }}/manifests/${{ env.TAILSCALE_VERSION }}
             )
-          echo "HTTP code: $HTTP_CODE
+          echo "HTTP code: $HTTP_CODE"
           IMAGE_EXISTS=$(if [ $HTTP_CODE -eq 200 ]; then echo "true"; else echo "false"; fi)
           echo "HTTP code: $HTTP_CODE, Image exists: $IMAGE_EXISTS"
           echo IMAGE_EXISTS=$IMAGE_EXISTS >> $GITHUB_ENV
